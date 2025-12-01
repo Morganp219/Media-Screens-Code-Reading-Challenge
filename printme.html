@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Sign-Up</title>
+      <!-- 
+        CSS MEDIA PRINT CHALLENGE
+        -------------------------
+        - Do NOT change the HTML structure or classes/ids.
+        - Do not change the original CSS.   
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html"><h1>Responsive DevCamp</h1></a>
+  <p>Event Sign-Up Form</p>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <h2>Sign Up</h2>
+    <p>Please fill out the form below. When finished, you may print a physical copy.</p>
+  </section>
+
+  <form class="signup-form">
+
+    <label class="field">
+      <span>Full Name</span>
+      <input type="text" placeholder="Your name" />
+    </label>
+
+    <label class="field">
+      <span>Email</span>
+      <input type="email" placeholder="you@example.com" />
+    </label>
+
+    <label class="field">
+      <span>Phone Number</span>
+      <input type="tel" placeholder="(555) 555-5555" />
+    </label>
+
+    <label class="field">
+      <span>Experience Level</span>
+      <select>
+        <option value="">Choose one</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </label>
+
+    <label class="field">
+      <span>Comments</span>
+      <textarea rows="3" placeholder="Anything we should know?"></textarea>
+    </label>
+
+    <div class="actions">
+      <button type="submit">Submit</button>
+      <button type="button">Print</button>
+    </div>
+  </form>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Responsive DevCamp</p>
+</footer>
+</body>
+</html>

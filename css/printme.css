@@ -1,0 +1,130 @@
+/* ===========
+   Print Page
+   =========== */
+
+a {
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+.header {
+  padding: 20px 40px;
+  background-color: #58a6ff;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.footer {
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #161b22;
+  border-top: 1px solid #262c36;
+  margin-top: 40px;
+}
+
+.content {
+  padding: 40px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-bottom: 24px;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  line-height: 1.6;
+}
+
+.signup-form {
+  background-color: #161b22;
+  border: 1px solid #262c36;
+  border-radius: 12px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #f0f6fc;
+  font: inherit;
+}
+
+.signup-form input::placeholder,
+.signup-form textarea::placeholder {
+  color: #8b949e;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 1px #58a6ff33;
+}
+
+.actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button[type="submit"] {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+.actions button[type="submit"]:hover {
+  background-color: #79b9ff;
+}
+
+.actions button[type="button"] {
+  background-color: #161b22;
+  color: #f0f6fc;
+  border: 1px solid #30363d;
+}
+
+.actions button[type="button"]:hover {
+  background-color: #1f2933;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive DevCamp</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 
+    CSS MEDIA QUERY CHALLENGE
+    -------------------------
+    - Do NOT change the HTML structure or classes/ids.
+    - Do not change the original CSS.   
+  -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__brand">
+      <h1 class="site-header__title">Responsive DevCamp</h1>
+      <p class="site-header__subtitle">Build once. Look great everywhere.</p>
+    </div>
+
+    <button class="site-header__menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav class="site-nav">
+      <ul class="site-nav__list">
+        <li class="site-nav__item"><a href="#about" class="site-nav__link">About</a></li>
+        <li class="site-nav__item"><a href="#tracks" class="site-nav__link">Tracks</a></li>
+        <li class="site-nav__item"><a href="#schedule" class="site-nav__link">Schedule</a></li>
+        <li class="site-nav__item"><a href="#speakers" class="site-nav__link">Speakers</a></li>
+        <li class="site-nav__item site-nav__item--highlight">
+          <a href="/printme.html" class="site-nav__link">Sign Up Form</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h2 id="hero-title" class="hero__title">Level up your responsive design skills</h2>
+        <p class="hero__text">
+          Join us for a one-day, hands-on workshop where you’ll learn how to design and build
+          interfaces that look awesome on phones, tablets, laptops, TVs, and everything in between.
+        </p>
+        <ul class="hero__highlights">
+          <li>Live coding sessions</li>
+          <li>Real-world layout challenges</li>
+          <li>Feedback from experienced devs</li>
+        </ul>
+        <a href="#register" class="hero__cta">Save your spot</a>
+      </div>
+
+      <div class="hero__image-wrapper">
+        <!-- This can be a colored block or background image with CSS -->
+        <div class="hero-image" role="img" aria-label="Illustration of responsive screens">
+          <!-- Students style this box to look like devices -->
+          <span class="hero-image__phone"></span>
+          <span class="hero-image__tablet"></span>
+          <span class="hero-image__desktop"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN LAYOUT WRAPPER -->
+    <div class="layout">
+      <!-- PRIMARY CONTENT -->
+      <section class="layout__main">
+        <!-- ABOUT -->
+        <section id="about" class="panel panel--about">
+          <h2 class="panel__title">About the Workshop</h2>
+          <p class="panel__text">
+            Responsive DevCamp is designed for developers who already know basic HTML and CSS,
+            and want to become confident in building layouts that adapt to any screen size.
+          </p>
+          <p class="panel__text">
+            We’ll cover flexible grids, responsive typography, media queries, and layout patterns
+            for multi-device experiences.
+          </p>
+        </section>
+
+        <!-- TRACKS -->
+        <section id="tracks" class="panel panel--tracks">
+          <h2 class="panel__title">Learning Tracks</h2>
+          <div class="tracks">
+            <article class="track-card">
+              <h3 class="track-card__title">Track 1: Layout Basics</h3>
+              <p class="track-card__level">Level: Beginner</p>
+              <p class="track-card__description">
+                Understand how to structure HTML for responsive designs, using semantic tags and
+                simple flexbox layouts.
+              </p>
+            </article>
+
+            <article class="track-card">
+              <h3 class="track-card__title">Track 2: Media Queries</h3>
+              <p class="track-card__level">Level: Intermediate</p>
+              <p class="track-card__description">
+                Learn how to adapt layouts, font sizes, and navigation for small, medium and large
+                screens using media queries.
+              </p>
+            </article>
+
+            <article class="track-card">
+              <h3 class="track-card__title">Track 3: Advanced Patterns</h3>
+              <p class="track-card__level">Level: Advanced</p>
+              <p class="track-card__description">
+                Explore responsive cards, dashboard layouts, and multi-column designs that collapse
+                gracefully on mobile.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SCHEDULE -->
+        <section id="schedule" class="panel panel--schedule">
+          <h2 class="panel__title">Schedule</h2>
+          <p class="panel__hint">
+            Tip: Use CSS grid or flexbox to lay these in 1 column on mobile, 2+ columns on large screens.
+          </p>
+          <div class="schedule">
+            <article class="schedule-card">
+              <h3 class="schedule-card__time">9:00 AM – 10:00 AM</h3>
+              <p class="schedule-card__title">Kickoff + Intro to Responsive Thinking</p>
+              <p class="schedule-card__tag">All Levels</p>
+            </article>
+
+            <article class="schedule-card">
+              <h3 class="schedule-card__time">10:15 AM – 11:30 AM</h3>
+              <p class="schedule-card__title">Media Query Playground</p>
+              <p class="schedule-card__tag">Hands-on Lab</p>
+            </article>
+
+            <article class="schedule-card">
+              <h3 class="schedule-card__time">1:00 PM – 2:30 PM</h3>
+              <p class="schedule-card__title">Responsive Navigation & Menus</p>
+              <p class="schedule-card__tag">Workshop</p>
+            </article>
+
+            <article class="schedule-card">
+              <h3 class="schedule-card__time">3:00 PM – 4:30 PM</h3>
+              <p class="schedule-card__title">Multi-Device Layout Challenge</p>
+              <p class="schedule-card__tag">Challenge</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SPEAKERS -->
+        <section id="speakers" class="panel panel--speakers">
+          <h2 class="panel__title">Speakers</h2>
+          <div class="speaker-list">
+            <article class="speaker-card">
+              <h3 class="speaker-card__name">Taylor Nguyen</h3>
+              <p class="speaker-card__role">Front-End Engineer</p>
+              <p class="speaker-card__bio">
+                Taylor builds design systems and responsive dashboards for high-traffic web apps.
+              </p>
+            </article>
+
+            <article class="speaker-card">
+              <h3 class="speaker-card__name">Jordan Lee</h3>
+              <p cla

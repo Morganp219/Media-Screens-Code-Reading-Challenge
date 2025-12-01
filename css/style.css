@@ -1,0 +1,287 @@
+/* ===========
+   BASE STYLES
+   =========== */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #0d1117;
+    color: #f0f6fc;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+    margin: 0;
+    color: #f0f6fc;
+}
+
+a {
+    color: #f0f6fc;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ===========
+   HEADER
+   =========== */
+header {
+    padding: 20px 40px;
+    background-color: #58a6ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header__menu-toggle {
+    display: none;
+}
+
+.site-header__brand {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.site-nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.site-nav__item--highlight a {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: #161b22;
+}
+
+
+/* ===========
+   HERO SECTION
+   =========== */
+.hero {
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero__content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero__highlights {
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.hero__cta {
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: #58a6ff;
+    color: #0d1117;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.hero__cta:hover {
+    background-color: #79b9ff;
+}
+
+.hero__image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 320px;
+    height: 260px;
+    background-color: #161b22;
+    border-radius: 16px;
+    position: relative;
+    border: 2px solid #58a6ff;
+}
+
+
+/* ===========
+   MAIN WRAPPER (2 COLUMN)
+   =========== */
+.layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px 80px;
+}
+
+.layout__main {
+    flex: 2;
+}
+
+.layout__sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* ===========
+   PANELS
+   =========== */
+.panel {
+    background-color: #161b22;
+    padding: 24px 32px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #262c36;
+}
+
+.panel__title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.panel__text {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+
+/* ===========
+   TRACK CARDS (3 per row)
+   =========== */
+.tracks {
+    display: flex;
+    gap: 24px;
+}
+
+.track-card {
+    flex: 1; /* 3 equal columns */
+    background-color: #0d1117;
+    border: 1px solid #262c36;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+}
+
+.track-card:hover {
+    transform: translateY(-4px);
+}
+
+.track-card__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+.track-card__level {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+
+/* ===========
+   SCHEDULE (4 CARDS IN A ROW)
+   =========== */
+.schedule {
+    display: flex;
+    gap: 24px;
+}
+
+.schedule-card {
+    flex: 1; /* 4 equal columns */
+    padding: 20px;
+    background-color: #0d1117;
+    border-radius: 10px;
+    border: 1px solid #262c36;
+}
+
+.schedule-card__time {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+
+/* ===========
+   SPEAKERS
+   =========== */
+.speaker-list {
+    display: flex;
+    gap: 30px;
+}
+
+.speaker-card {
+    flex: 1;
+    padding: 20px;
+    background-color: #0d1117;
+    border-radius: 10px;
+    border: 1px solid #262c36;
+}
+
+
+/* ===========
+   SIDEBAR PANELS
+   =========== */
+.sidebar-panel {
+    background-color: #161b22;
+    border: 1px solid #262c36;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.sidebar-panel__title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.register-form__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.register-form__label {
+    margin-bottom: 4px;
+}
+
+.register-form__submit {
+    padding: 12px 18px;
+    background-color: #58a6ff;
+    color: #0d1117;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-form__submit:hover {
+    background-color: #79b9ff;
+}
+
+
+/* ===========
+   FOOTER
+   =========== */
+.site-footer {
+    padding: 20px 40px;
+    text-align: center;
+    background-color: #161b22;
+    border-top: 1px solid #262c36;
+}
